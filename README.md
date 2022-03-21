@@ -19,8 +19,8 @@ pip install -r requirements.txt
 ## Data
 
 ## Checklist
-- [] Code
-- [] Data
+- [x] Code (v0.1)
+- [x] Data
 - [] Documentation
 
 
