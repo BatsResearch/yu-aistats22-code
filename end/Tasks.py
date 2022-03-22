@@ -4,7 +4,7 @@ import time
 from sklearn.metrics import accuracy_score, classification_report
 from tqdm.notebook import tqdm
 from copy import deepcopy as dc
-from attributes.utils import test_stats
+from eval import test_stats
 from .backbones.resnet import r101_in_dim
 
 
@@ -25,7 +25,6 @@ def MCA(pred, true):
         ind = np.where(true==cla)[0]
         results.append(np.mean(pred[ind]==true[ind]))
     return np.mean(results)
-
 
 
 def awa_mca(pred, true, unseen_classes=None, print_by_class=False, std=True, epoch=-1):
