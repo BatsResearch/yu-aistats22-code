@@ -3,6 +3,8 @@ NPLM is a programmatic weak supervision system that supports (partial) labeling 
 
 For the underlying weak supervision system, further documentation and tutorials, please see [NPLM repo](https://github.com/BatsResearch/nplm).
 
+To use the experimental code, please first install the nplm package from [NPLM repo](https://github.com/BatsResearch/nplm).
+
 This is the codebase for the experiments mentioned in [Learning from Multiple Noisy Partial Labelers](https://arxiv.org/pdf/2106.04530.pdf).
 
 ## Code Organization
