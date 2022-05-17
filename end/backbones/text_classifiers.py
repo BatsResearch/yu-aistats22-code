@@ -12,7 +12,7 @@ import torch.nn as nn
 class SoftCrossEntropy(torch.nn.Module):
     def __init__(self, reduction='mean'):
         super(SoftCrossEntropy, self).__init__()
-        self.reduction = reductione
+        self.reduction = reduction
     def forward(self, pred, target):
         lsm = pred.log_softmax(dim=1)
         loss = torch.sum(-target * lsm)
